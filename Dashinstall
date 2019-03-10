@@ -1,0 +1,17 @@
+load common functions ------------------------------------------------------
+
+DASHD_RUNNING=0
+DASHD_RESPONDING=0
+
+GITHUB_API_DASH="https://api.github.com/repos/dashpay/dash"
+INSTALL_DIR=$HOME/.dashcore
+
+SOURCE_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd);
+#echo $SOURCE_DIR
+
+BOOTSTRAP_LOCATION=~/Bootstrap
+
+
+
+curl_cmd="curl -k -s -L -A dashman/$DASHMAN_VERSION"
+wget_cmd='wget --no-check-certificate -q'
